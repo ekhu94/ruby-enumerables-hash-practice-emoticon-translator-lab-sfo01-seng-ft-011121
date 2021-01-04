@@ -1,8 +1,8 @@
 require "yaml"
 require 'pry'
 
-def load_library(file)
-  hash = YAML.load_file(file)
+def load_library
+  hash = YAML.load_file("lib/emoticons.yml")
   new_hash = {}
   hash.each do |k, v|
     new_hash[k] = {
@@ -13,4 +13,6 @@ def load_library(file)
   new_hash
 end
 
-puts load_library("lib/emoticons.yml")
+def get_english_meaning(emot)
+  hash = load_library
+end
