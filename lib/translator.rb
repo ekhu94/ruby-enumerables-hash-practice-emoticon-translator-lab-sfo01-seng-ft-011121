@@ -26,4 +26,5 @@ def get_japanese_emoticon(file, emot)
   hash.each do |mood, langs|
     return langs[:japanese] if emot == langs[:english] 
   end
+  return "Sorry, that emoticon was not found"
 end
