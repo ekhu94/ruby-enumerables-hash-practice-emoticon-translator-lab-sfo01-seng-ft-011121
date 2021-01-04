@@ -16,6 +16,6 @@ end
 def get_english_meaning(file, emot)
   hash = load_library(file)
   hash.each do |mood, langs|
-    
+    return mood if hash[mood][:japanese] == emot
   end
 end
