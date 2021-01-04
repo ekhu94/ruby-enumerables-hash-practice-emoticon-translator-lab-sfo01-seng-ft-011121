@@ -7,4 +7,4 @@ def load_library(file)
   hash
 end
 
-puts load_library("emoticons.yml")
+puts load_library("lib/emoticons.yml")
