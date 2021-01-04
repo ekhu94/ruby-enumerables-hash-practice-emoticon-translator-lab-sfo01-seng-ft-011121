@@ -13,6 +13,9 @@ def load_library(file)
   new_hash
 end
 
-def get_english_meaning(emot)
-  hash = load_library
+def get_english_meaning(file, emot)
+  hash = load_library(file)
+  hash.each do |mood, langs|
+    
+  end
 end
