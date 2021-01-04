@@ -24,6 +24,6 @@ end
 def get_japanese_emoticon(file, emot)
   hash = load_library(file)
   hash.each do |mood, langs|
-    return 
+    return langs[:japanese] if emot == langs[:english] 
   end
 end
