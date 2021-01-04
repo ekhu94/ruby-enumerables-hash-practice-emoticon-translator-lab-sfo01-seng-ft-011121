@@ -11,7 +11,7 @@ def load_library(file)
     }
   end
   binding.pry
-  hash
+  new_hash
 end
 
 puts load_library("lib/emoticons.yml")
